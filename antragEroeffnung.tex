@@ -1,0 +1,141 @@
+\documentclass[gi,nohp]{techbrief2011}
+% \usepackage{pslatex} %times,newcent,pslatex, palatino
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}% \usepackage{german}
+\usepackage{xcolor}
+\setlength{\textheight}{25cm}
+
+%%%%% Change here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Name{Full name}
+\def\Tel{Phone number}
+\def\Ort{City}
+\def\EMail{Email}
+
+\def\Geburtsdaten{19.11.1991}
+\def\AktuellerTitel{M.~Sc.~}
+\def\AngestrebterTitel{Dr.~rer.~nat.} % oder
+% \def\AngestrebterTitel{Dr.-Ing.}
+\def\DissertationTitel{My thesis title}
+\def\Dekan{Cimiano} % Bitte den Namen des aktuellen Dekans eintragen (Techfak Homepage)
+\def\Erstgutachter{apl. Prof.\ Dr.\-Ing. A B}
+\def\Zweitgutachter{Prof.\ Dr.\ X Y}
+\def\Drittgutachter{Prof.\ Dr.\ C D}
+
+% Bei externen Gutachtern bitte auch die Adresse angeben.
+\def\ZugehoerigkeitErstgutachter{Technische Fakultät der Universität Bielefeld}
+\def\ZugehoerigkeitZweitgutachter{University of T}
+\def\Vorsitz{Junior Prof. Dr.- T {\"U}} % bitte ändern
+\def\Mittelbau{Dr.\ A S}
+\def\anzahlKomission{vier} % size of your committee
+\def\anzahlArbeiten{fünf} % size of your committee +1
+
+\def\Datum{\today} % \today oder anderes Datum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\from{\AktuellerTitel\Name}
+\phone{\Tel}
+\email[@cebitec.uni-bielefeld.de]{\EMail}
+% \signature{\Name}
+\place{\Ort}
+\date{\today}
+% \date{16. Sep. 2013}
+%
+
+\begin{document}
+\begin{letter}{An den Dekan der Technischen Fakultät\\
+               Universität Bielefeld\\
+               Postfach 100131\\[.5ex]
+               33501 Bielefeld}%
+%
+% \subject{\textbf{Gutachten für die \ThesisType{} \emph{\glqq\ThesisTitle\grqq} eingereicht von \Student}}
+\subject{\textbf{Eröffnung des Promotionsverfahrens}}
+\opening{Sehr geehrter Professor Cimiano,}
+% % \small
+hiermit beantrage ich die Eröffnung des Promotionsverfahrens an der Technischen
+Fakultät der Universität Bielefeld nach \S5 der Promotionsordnung. Der Titel der Arbeit lautet: \medskip
+
+\hfill\begin{minipage}{.8\textwidth}
+% 	\begin{flushleft}
+	\glqq\DissertationTitel\grqq
+% 	\end{flushleft}
+\end{minipage}\hfill\mbox{}\medskip
+
+Ich strebe den Doktorgrad \glqq{}\AngestrebterTitel{}\grqq{} an. \bigskip
+
+\textbf{Vorschlag zur Benennung der Gutachter.}\\
+Ich schlage Herrn \textbf{\Erstgutachter}, \ZugehoerigkeitErstgutachter, sowie Frau \textbf{\Zweitgutachter}, \ZugehoerigkeitZweitgutachter, und Herrn \textbf{\Drittgutachter} als Gutachter\_innen vor.\bigskip
+
+\textbf{Vorschlag zur Benennung der Prüfungskommission.}\\
+Nach Absprache mit den Beteiligten schlage ich die folgenden \anzahlKomission{} Personen als Mitglieder der
+Prüfungskommission vor:\medskip
+
+\begin{tabular}{llll}%\itemsep-05ex
+	Vorsitz & \Vorsitz \\
+		& Universität Bielefeld \\
+	Gutachter & \Erstgutachter \\
+		& Universität Bielefeld \\
+	Gutachter & \Zweitgutachter & Phone: (code)-number\\
+		& University of T & Mail: name@mail.ca\\
+		& X666, X-Wing building Entrance X\\
+		& 201-2366 Main Mall \\
+		& Vancouver, BC, V6T 1Z4, Vancouver \\
+	Gutachter & \Drittgutachter & Phone: 0234 32-29827\\
+	& Ruhr Universit{\"a}t Bochum (RUB) & Mail: name@mail.de\\
+	& Geb{\"a}ude ND 04/173\\
+	& Universit{\"a}tsstr. 150\\
+	& 44801, Bochum, Deutschland\\
+	Mittelbau & \Mittelbau \\
+		& Universität Bielefeld \\
+\end{tabular}\medskip
+
+\Vorsitz~hat sich bereiterklärt, den Vorsitz zu übernehmen.\bigskip
+
+\clearpage
+\textbf{Erklärungen.}\\
+Ich, \Name, geboren am \Geburtsdaten, erkläre hiermit,
+dass ich die Dissertation selbständig erarbeitet und keine anderen als
+die in der Dissertation angegebenen Hilfsmittel benutzt habe.
+
+Ich erkläre mich
+außerdem % öffentlich
+%nicht % nicht öffentlich
+damit einverstanden,
+dass das wissenschaftliche Gespräch bei
+der Disputation universitätsöffentlich stattfindet.
+
+\closing{Mit freundlichen Grüßen,\\[1cm]
+\parbox[t]{5cm}{\dotfill\\ \centering \Name}}
+%Anlagen
+\encl{~\\[-.5em]Lebenslauf mit Publikationsliste\\[1em]Dissertation in \anzahlArbeiten{}facher Ausfertigung\\[1em]Erklärung zur Begutachtung durch \Erstgutachter}
+
+% \closing{Mit freundlichen Grüßen,\\[1cm]
+% \parbox[t]{5cm}{\dotfill\\ \centering \Name}}
+
+% 	\begin{center}
+% 			\textbf{\Grade}.
+% 	\end{center}\vspace{1em}
+% % \centerline{\textbf{\Grade}.}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace*{\stretch{1}}
+% \Ort, \datum\Date \hspace{\fill}
+% \parbox[t]{5cm}{\dotfill\\ \centering \Gutachter }
+% \vspace*{\stretch{4}}
+% \end{letter}
+% \newpage \small
+% %
+% %Publikationsliste
+% \renewcommand{\refname}{Publikationsliste von \Name}
+% \begin{thebibliography}{1}
+% %Hier kann der Inhalt eines .bbl files eingefügt werden
+% \bibitem{Mustermann2042}
+% Max Mustermann.
+% \newblock Astonishing insights into situated learning in micobial contexts.
+% \newblock In {\em Proc. of the Int. Conf. on Pattern Recognition (ICPR'42)},
+%   volume~5, pages 274--668. IEEE, 2042.
+% \end{thebibliography}
+
+\end{letter}
+\end{document}
+
+
